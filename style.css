@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-image: url("image.png");
+    object-fit:cover;
+    
+}
+
+h1 {
+    background-color: #474056;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.choice:hover {
+    background-color: #04BF45;
+    cursor: pointer;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+#msg {
+    background-color: #474056;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1.5rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+
+/* 🔽 Media Query for Tablets (Max Width: 768px) */
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .choice {
+        height: 9rem;
+        width: 9rem;
+    }
+
+    img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+        gap: 3rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+/* 🔽 Media Query for Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choice {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .score-board {
+        /* flex-direction: column; */
+        font-size: 1.2rem;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        margin-top: 3rem;
+    }
+}
